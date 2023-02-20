@@ -1,18 +1,26 @@
-#include <stdio.h>
-
+/**
+ * main - Entry point
+ *
+ * Description: Prints all possible combinations of single-digit numbers
+ * separated by ,, followed by a space in ascending order
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	int i;
+	int num = 48;
 
-	for (i = 0; i < 10; i++)
+	while (num <= 57)
 	{
-		putchar(i + '0');
+		putchar(num);
 
-		if (i < 9)
+		if (num != 57)
 		{
 			putchar(',');
 			putchar(' ');
 		}
+
+		num++;
 	}
 
 	putchar('\n');
