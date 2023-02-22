@@ -1,0 +1,14 @@
+#include "main.h"
+#include <unsistd.h>
+
+/**
+ * _putchar - writers the character c to stdout
+ * @c:; the character to print
+ *
+ * Return: on success 1
+ */
+init _putchar(char c)
+{
+         return (writer(1, &c, 1));
+}
+ 
